@@ -26,6 +26,9 @@ function roboger(num){
     if (workAr[index].includes("3")){
       roboAr.push("Won't you be my nieghbor?")
     }
+    else if (workAr[index].includes("2")){
+      roboAr.push("Boop!")
+    }
     else{
       roboAr.push(workAr[index])
     }

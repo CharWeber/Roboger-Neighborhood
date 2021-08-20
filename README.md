@@ -22,13 +22,19 @@ expected output: an array with the numbers displayed from zero to userinput numb
   workNum(userInput)
   expected outcome: NumAr = [1, 2, 3]
 
-  describe roboger()
-
-  test: it should return an array with 0 if the number 0 is inputted
+    test: it should return an array with 0 if the number 0 is inputted
   code: roboger(0).toequal([0])
 
   test: it should return array conataing numbers up to the user inputted number
-  code roboger(7).toEqual([0,1,2,3,4,5,6,7])
+  code roboger(32).toEqual([0,1,2,3,4,5,6,7...until 32])
+
+  describe roboger()
+
+  test: exception 3; it should replace the number "3" with "Won't you be my Neighbor?"
+  code: roboger(3).toEqual([0, 1, 2, "won't you be my neighbor?"])
+
+  test:exception 2; It should replace the number "2" with "Boop!" (except for when a 3 is present)
+  code: roboger(3).toEqual(["0", "1", "Boop!", "Won't you be my neighbor?"])
 
 
 
