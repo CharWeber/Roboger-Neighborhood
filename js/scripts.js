@@ -13,7 +13,6 @@ function workNum(num) {
     lastAr.push(number.toString())
   })
   return lastAr
-  console.log(lastAr)
 }
 
 function roboger(num) {
@@ -46,9 +45,7 @@ function roboger(num) {
       roboAr.push(workAr[index])
     }
   }
-
   return roboAr
-  console.log(roboAr)
 }
 
 // User Interface Logic
