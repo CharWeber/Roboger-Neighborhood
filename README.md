@@ -71,22 +71,24 @@ expected output: an array with the numbers displayed from zero to userinput numb
 
 
 
-# _{Application Name}_
+# _Mr. Roboger's Neighborhood_
 
-#### _{Brief description of application}_
+#### _A website to interact with Mr. Roboger_
 
-#### By _**{List of contributors}**_
+#### By _Charles t weber**_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _CSS_
+* _HTML_
+* _Javascript_
+* _jQuery Libraries_
+* _Bootstrap Libraries_
+* _Fonts linked from google fonts_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_THis application is designed to take a number input from the user and pass that information through some JS functions to have our Mr. Roboger respond with some greetings and other robot jumbo. The user will be able to see Mr. Roboger's response in the window next to his house. the program can be used repeatedly with new results replacing the old_
 
 ## Setup/Installation Requirements
 

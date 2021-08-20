@@ -17,9 +17,10 @@ function workNum(num) {
 }
 
 function roboger(num) {
-  const workAr = workNum(num)
+  let workAr = workNum(num)
   let roboAr = []
-  for (let index = 0; index <= workAr.length; index++) {
+  let newNum = num.replace(/[.,/#!$%?^&*;:{}=-_`~()a-z]/g, "");
+  for (let index = 0; index <= newNum; index++) {
     if (index === 0){
       roboAr.push("Hello Internet Neighbor. *puts on Cardigan and changes shoes*")
     }
@@ -29,16 +30,16 @@ function roboger(num) {
     else if (index >=46 && index <= 55){
       roboAr.push("ROBOTS ARE MORE SPECIAL")
     }
-    else if (workAr[index].includes("3")) {
+    else if (workAr[index].includes(3)) {
       roboAr.push("Won't you be my nieghbor?")
     }
-    else if (workAr[index].includes("2")) {
+    else if (workAr[index].includes(2)) {
       roboAr.push("Boop!")
     }
-    else if (workAr[index].includes("1")) {
+    else if (workAr[index].includes(1)) {
       roboAr.push("Beep!")
     }
-    else if (workAr[index].includes("5")){
+    else if (workAr[index].includes(5)){
       roboAr.push("You are special to Mr. Roboger")
     }
     else {
