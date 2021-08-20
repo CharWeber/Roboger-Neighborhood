@@ -42,10 +42,19 @@ expected output: an array with the numbers displayed from zero to userinput numb
   test: exception 1; it should return the number 1 as the word "Beep!"
   code: roboger(3).toEqual(["0", "Beep!", "Boop!", "Won't you be my neighbor?"])
 
+  Describe: User Interface
 
-
-
-
+  test: returns each item in array in UL
+  code: input submitted "5"
+  expected Output:
+    <ul>
+      <li> 0 </li>
+      <li> Beep! </li>
+      <li> Boop! </li>
+      <li> "Won't you be my neighbor?" </li>
+      <li> "4" </li>
+      <li> "5" </li>
+    </ul>
 
 
 
