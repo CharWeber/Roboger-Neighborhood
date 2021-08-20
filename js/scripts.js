@@ -2,43 +2,35 @@
 
 function workNum(num){
   let newNum = num.replace(/[.,/#!$%^&*;:{}=-_`~()]/g, "");  
-  let roboAr = []
+  let newAr = []
   for (let i = 0; i<= newNum; i++){
     if (i<=newNum){
-      roboAr.push(i)
+      newAr.push(i)
     }
   }
-  return roboAr
-  console.log(roboAr)
+  let lastAr = []
+  newAr.forEach(function(number){
+    lastAr.push(number.toString())
+  })
+  return lastAr
+  console.log(lastAr)
 }
 
 
 //now we just have one str number
 
-// function roboger(num){
-//   const userAr = workNum(num)
-//   let workAr = []
-//   userAr.forEach(function(numb){
-//     if (numb.includes("3")){
-//       workAr.push("3")
-//     }
-//     else{
-//       workAr.push(numb)
-//     }
-//   })
-//   let roboAr = []
-//     for (let i = 0; i<= num; i++){
-//       if (i<=num){
-//         roboAr.push(i)
-//       }
-//     }
-//     userAr.forEach(function(numb){
-//       if (numb.includes("3")){
-//         workAr.push("3")
-//       }
-//       else{
-//         workAr.push(numb)
-//       }
-// }
-// }
-// }
+function roboger(num){
+  const workAr = workNum(num)
+  let roboAr = []
+  for (let index = 0; index<= num; index++){
+    if (workAr[index].includes("3")){
+      roboAr.push("Won't you be my nieghbor?")
+    }
+    else{
+      roboAr.push(workAr[index])
+    }
+  }
+
+  return roboAr
+  console.log(roboAr)
+}
