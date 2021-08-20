@@ -27,6 +27,9 @@ expected output: an array with the numbers displayed from zero to userinput numb
   test: it should return an array with 0 if the number 0 is inputted
   code: roboger(0).toequal([0])
 
+  test: it should return array conataing numbers up to the user inputted number
+  code roboger(7).toEqual([0,1,2,3,4,5,6,7])
+
 
 
 
