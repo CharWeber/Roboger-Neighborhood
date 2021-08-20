@@ -20,7 +20,10 @@ function roboger(num) {
   const workAr = workNum(num)
   let roboAr = []
   for (let index = 0; index <= num; index++) {
-    if (workAr[index].includes("3")) {
+    if (index === 0){
+      roboAr.push("Hello Internet Neighbor. *puts on Cardigan and changes shoes*")
+    }
+    else if (workAr[index].includes("3")) {
       roboAr.push("Won't you be my nieghbor?")
     }
     else if (workAr[index].includes("2")) {

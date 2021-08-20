@@ -56,6 +56,18 @@ expected output: an array with the numbers displayed from zero to userinput numb
       <li> "5" </li>
     </ul>
 
+    test: returns new list, and clears old list on repeated use
+    code: input submitted "3" and then "5"
+    expected output:
+      <ul>
+        <li> 0 </li>
+        <li> Beep! </li>
+        <li> Boop! </li>
+        <li> "Won't you be my neighbor?" </li>
+        <li> "4" </li>
+        <li> "5" </li>
+      </ul>
+
 
 
 # _{Application Name}_
