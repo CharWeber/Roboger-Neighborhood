@@ -19,7 +19,7 @@ function workNum(num) {
 function roboger(num) {
   const workAr = workNum(num)
   let roboAr = []
-  for (let index = 0; index <= num; index++) {
+  for (let index = 0; index <= workAr.length; index++) {
     if (index === 0){
       roboAr.push("Hello Internet Neighbor. *puts on Cardigan and changes shoes*")
     }
