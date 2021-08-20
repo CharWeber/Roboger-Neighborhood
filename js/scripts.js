@@ -1,15 +1,21 @@
 // Busisness logic
 
-function workNum(userInput){
-  let newStr = userInput.replace(/[A-Za-z.,/#!$%^&*;:{}=-_`~()]/g, "");
-  const numAr = newStr.split("");
-  return numAr
-  console.log(numAr);
+function workNum(num){
+  let newStr = num.replace(/[.,/#!$%^&*;:{}=-_`~()]/g, "");  
+  return newStr
 }
 
 
+//now we just have one str number
 
-
-function Roboger(){
-
+function roboger(num){
+  const userAR = workNum(num)
+  let roboAr = []
+    for (let i = 0; i<= num; i++){
+      if (i<=num){
+        roboAr.push(i)
+      }
+    }
+    return roboAr
+    console.log(roboAr)
 }

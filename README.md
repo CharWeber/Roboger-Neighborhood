@@ -1,6 +1,32 @@
 ## _Tests_
 
-  
+  behaviors:
+  1. recieve input from user
+  2. transform inout into workable str or array
+  3. Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+  4. Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+  5. Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+  6. User input name should be added to end of string (if added)
+  7. display new robo response on HTML
+
+
+expected inputs: A positive number
+expected output: an array with the numbers displayed from zero to userinput number w/exceptions for 1,2,3,
+
+
+
+  describe workNum()
+
+  test: takes user input and turns into array of numbs
+  code: const userInput = "KBHSDjkh123"
+  workNum(userInput)
+  expected outcome: NumAr = [1, 2, 3]
+
+  describe roboger()
+
+  test: it should return an array with 0 if the number 0 is inputted
+  code: roboger(0).toequal([0])
+
 
 
 
