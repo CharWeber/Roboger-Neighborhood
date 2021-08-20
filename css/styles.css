@@ -1,4 +1,31 @@
 ul {
   list-style-type: none;
   font-family: 'Roboto Mono', monospace;
+  color:green;
+}
+body{
+  background-color: black;
+}
+.container{
+  width:50%;
+}
+#roboScreen{
+background: url('img/tv.jpg');
+background-position: center;
+background-repeat: repeat;
+}
+#formdiv{
+  text-align: center;
+  color:white;
+  background-color: black;
+}
+#house{
+
+}
+.card{
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+img{
+  border-radius: 25px;
 }
