@@ -29,6 +29,9 @@ function roboger(num){
     else if (workAr[index].includes("2")){
       roboAr.push("Boop!")
     }
+    else if (workAr[index].includes("1")){
+      roboAr.push("Beep!")
+    }
     else{
       roboAr.push(workAr[index])
     }
