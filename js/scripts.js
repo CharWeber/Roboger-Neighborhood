@@ -45,8 +45,9 @@ $(document).ready(function() {
     event.preventDefault();
     const input = $("#userData").val();
     const robotSpeak = roboger(input)
+    $("#result").html("");
     robotSpeak.forEach(function(element){
-      $("#result").append("<li> " + element + " </li>")
+      $("#result").append("<li>" + element + "</li>")
     });
   });
 });
