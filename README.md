@@ -63,13 +63,19 @@ _charlestweber@gmail.com_
     expected outcome: NumAr = [1, 2, 3]
 
     test: it should return an array with 0 if the number 0 is inputted
-    code: roboger(0).toequal([0])
+    code: workNum(0).toequal([0])
 
     test: it should return array conataing numbers up to the user inputted number
-    code roboger(32).toEqual([0,1,2,3,4,5,6,7...until 32])
+    code workNum(32).toEqual([0,1,2,3,4,5,6,7...until 32])
 
     test: it should return objects in array as individual strings
-    code: roboger(32).toequal(["0", "1", "2", "3", ....etc])
+    code: workNum(32).toequal(["0", "1", "2", "3", ....etc])
+
+    test: It should return array regardless of special chracters and symbols in input
+    code: workNum("skjfbhs4!@!#-^@&*)
+    expected outcome: ["0", "1", "2", "3", "4",]
+
+
 
   __describe roboger()__
 
