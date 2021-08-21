@@ -1,7 +1,7 @@
 // Busisness logic
 
 function workNum(num) {
-  let newNum = num.replace(/[.,/#!$%?^&*;:{}=-_`~()a-z]/g, "");
+  let newNum = num.replace(/[^0-9]/g, "");
   let newAr = []
   for (let i = 0; i <= newNum; i++) {
     if (i <= newNum) {
@@ -18,7 +18,7 @@ function workNum(num) {
 function roboger(numb) {
   let workAr = workNum(numb)
   let roboAr = []
-  let newNum = numb.replace(/[.,/#!$%?^&*;:{}=-_`~()a-z]/g, "");
+  let newNum = numb.replace(/[^0-9]/g, "");
   for (let index = 0; index <= newNum; index++) {
     if (index === 0){
       roboAr.push("Hello Internet Neighbor. *puts on Cardigan and changes shoes*")
